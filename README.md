@@ -68,4 +68,4 @@ Aplicación frontend de un e-commerce básico de cine, desarrollada con React + 
 ![Layout funcionando](./Dosc/8.png)
 
 ### 4. Homepage con shadcn/ui
-![Homepage](./Dosc/9.png)
+![Homepage](./Docs/9.png)
