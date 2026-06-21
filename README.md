@@ -59,13 +59,13 @@ Aplicación frontend de un e-commerce básico de cine, desarrollada con React + 
 ## 🖼️ EVIDENCIAS-Eder Carrasco
 
 ### 1. Instalación de shadcn/ui
-![Instalación shadcn](./Dosc/6.png)
+![Instalación shadcn](./Dosc/5.png)
 
 ### 2. Rutas configuradas
-![Rutas configuradas](./Dosc/7.png)
+![Rutas configuradas](./Dosc/6.png)
 
 ### 3. Layout funcionando (navegación)
-![Layout funcionando](./Dosc/8.png)
+![Layout funcionando](./Dosc/7.png)
 
 ### 4. Homepage con shadcn/ui
-![Homepage](./Dosc/9.png)
+![Homepage](./Dosc/8.png)
