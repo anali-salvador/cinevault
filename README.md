@@ -1,75 +1,61 @@
-# React + TypeScript + Vite
+# 🎬 CineVault Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 👥 Autores
+- **Anali Salvador Advincula**
+- **Eder Carrasco**
 
-Currently, two official plugins are available:
+## 📖 Descripción
+Aplicación frontend de un e-commerce básico de cine, desarrollada con React + TypeScript + Vite. Permite explorar una cartelera de películas y acceder al detalle de cada una. Pensada como base escalable para un proyecto más grande, sin sobreingeniería.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tecnologías
+- React 19 (React Compiler)
+- TypeScript
+- Vite
+- Tailwind CSS v4
+- shadcn/ui (Radix)
+- React Router DOM
+- Axios
+- TanStack Query
+- Node.js v22.20.0
 
-## React Compiler
+## ⚙️ Instalación y ejecución
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. Clonar el repositorio:
+```bash
+   git clone https://github.com/anali-salvador/cinevault.git
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. Instalar dependencias:
+```bash
+   npm install
 ```
+3. Correr el servidor de desarrollo:
+```bash
+   npm run dev
+```
+4. Abrir en el navegador: `http://localhost:5173`
+## 📁 Estructura del proyecto
+src/ ├── components/ │ └── ui/ → componentes de shadcn/ui (Button, Card, etc.) ├── data/ │ └── movies.ts → datos mock de películas ├── layouts/ │ └── main-layout.tsx → navbar + footer + <Outlet /> ├── lib/ │ └── utils.ts → utilidades de shadcn (cn helper) ├── pages/ │ ├── home-page.tsx → Hero + grilla de películas destacadas │ ├── movies-page.tsx → cartelera completa │ └── movie-detail-page.tsx → detalle de una película ├── routes/ │ └── router.tsx → definición de las 3 rutas ├── services/ │ └── http-client.ts → instancia de Axios ├── types/ │ └── movie.ts → interface Movie ├── App.tsx ├── index.css └── main.tsx
+
+## 🗺️ Rutas disponibles
+
+| Ruta | Descripción |
+|---|---|
+| `/` | Home — Hero + películas destacadas |
+| `/movies` | Cartelera completa |
+| `/movies/:id` | Detalle de una película |
+
+## 🖼️ EVIDENCIAS-Anali Salvador
+
+### 1. Instalación de shadcn/ui
+![Instalación shadcn](./Dosc/1.png)
+
+### 2. Rutas configuradas
+![Rutas configuradas](./Dosc/2.png)
+
+### 3. Layout funcionando (navegación)
+![Layout funcionando](./Dosc/3.png)
+
+### 4. Homepage con shadcn/ui
+![Homepage](./Dosc/4.png)
+
+## 🖼️ EVIDENCIAS-Ederd Carrasco
