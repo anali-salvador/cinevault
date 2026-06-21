@@ -34,7 +34,31 @@ Aplicación frontend de un e-commerce básico de cine, desarrollada con React + 
 ```
 4. Abrir en el navegador: `http://localhost:5173`
 ## 📁 Estructura del proyecto
-src/ ├── components/ │ └── ui/ → componentes de shadcn/ui (Button, Card, etc.) ├── data/ │ └── movies.ts → datos mock de películas ├── layouts/ │ └── main-layout.tsx → navbar + footer + <Outlet /> ├── lib/ │ └── utils.ts → utilidades de shadcn (cn helper) ├── pages/ │ ├── home-page.tsx → Hero + grilla de películas destacadas │ ├── movies-page.tsx → cartelera completa │ └── movie-detail-page.tsx → detalle de una película ├── routes/ │ └── router.tsx → definición de las 3 rutas ├── services/ │ └── http-client.ts → instancia de Axios ├── types/ │ └── movie.ts → interface Movie ├── App.tsx ├── index.css └── main.tsx
+
+\`\`\`
+src/
+├── components/
+│   └── ui/                    → componentes de shadcn/ui (Button, Card, etc.)
+├── data/
+│   └── movies.ts               → datos mock de películas
+├── layouts/
+│   └── main-layout.tsx          → navbar + footer + <Outlet />
+├── lib/
+│   └── utils.ts                  → utilidades de shadcn (cn helper)
+├── pages/
+│   ├── home-page.tsx             → Hero + grilla de películas destacadas
+│   ├── movies-page.tsx           → cartelera completa
+│   └── movie-detail-page.tsx     → detalle de una película
+├── routes/
+│   └── router.tsx                 → definición de las 3 rutas
+├── services/
+│   └── http-client.ts              → instancia de Axios
+├── types/
+│   └── movie.ts                     → interface Movie
+├── App.tsx
+├── index.css
+└── main.tsx
+\`\`\`
 
 ## 🗺️ Rutas disponibles
 
